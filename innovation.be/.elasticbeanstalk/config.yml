@@ -1,0 +1,25 @@
+branch-defaults:
+  main:
+    environment: InnovationBE-dev
+    group_suffix: null
+deploy:
+  artifact: target/Innovation-0.0.1-SNAPSHOT.jar
+environment-defaults:
+  InnovationBE-dev:
+    branch: null
+    repository: null
+option_settings:
+  aws:elasticbeanstalk:application:environment:
+    SPRING_PROFILES_ACTIVE: test
+global:
+  application_name: InnovationBE
+  default_ec2_keyname: quangtv8-key
+  default_platform: Corretto 11 running on 64bit Amazon Linux 2
+  default_region: ap-northeast-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: git
+  workspace_type: Application
